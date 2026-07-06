@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidal y Trautmann Construcciones | Diseño & Arquitectura Premium</title>
+  <meta name="description" content="Constructora Vidal y Trautmann. Casas de alta gama, remodelación de cocinas premium y mobiliario a medida. Cotiza tu proyecto hoy.">
+  <link rel="icon" type="image/png" href="./public/assets/logo.png">
+  
+  <!-- Google Fonts: Outfit & Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo-area">
+        <img src="./public/assets/logo.png" alt="Vidal y Trautmann Logo" class="header-logo">
+        <div class="logo-text">
+          <span class="logo-title">VIDAL Y TRAUTMANN</span>
+          <span class="logo-subtitle">CONSTRUCCIONES</span>
+        </div>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#trabajos" class="nav-link">Proyectos</a>
+        <a href="#cotizador-chat" class="nav-link highlight-link" data-open-chat>Cotizar</a>
+      </nav>
+
+      <button class="mobile-menu-toggle" aria-label="Abrir Menú">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <img src="./public/assets/logo.png" alt="Logo" class="drawer-logo">
+      <button class="close-drawer" aria-label="Cerrar Menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-links">
+      <a href="#inicio" class="drawer-link">Inicio</a>
+      <a href="#nosotros" class="drawer-link">Nosotros</a>
+      <a href="#trabajos" class="drawer-link">Proyectos</a>
+      <a href="#cotizador-chat" class="drawer-link drawer-highlight" data-open-chat>Cotizar Proyecto</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Artesanía, Precisión & Calidad</span>
+      <h1 class="hero-title">Construyendo Proyectos de Vida</h1>
+      <p class="hero-description">Especialistas en viviendas de alta gama en madera nativa, remodelaciones premium y mobiliario personalizado de diseño exclusivo.</p>
+      <div class="hero-actions">
+        <a href="#trabajos" class="btn btn-primary">Ver Portafolio</a>
+        <a href="#cotizador-chat" class="btn btn-secondary" data-open-chat>Cotizar Proyecto</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="scroll-mouse">
+        <span class="scroll-wheel"></span>
+      </span>
+      <span class="scroll-text">Desliza para explorar</span>
+    </div>
+  </section>
+
+  <!-- Carousel Section (Obras Destacadas) -->
+  <section class="carousel-section">
+    <div class="section-title-wrapper text-center">
+      <span class="section-subtitle">Garantía y Detalle</span>
+      <h2 class="section-title">Obras Destacadas</h2>
+    </div>
+    
+    <div class="carousel-container">
+      <div class="carousel-slider">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('./public/assets/casa-madera.png');">
+          <div class="slide-content">
+            <span class="slide-category">Arquitectura en Madera</span>
+            <h3 class="slide-title">Casa de Campo Patagónica</h3>
+            <p class="slide-desc">Residencia de dos pisos construida en maderas nobles nativas con amplios ventanales termo-panel integrados con el entorno boscoso.</p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('./public/assets/cocina-moderna.png');">
+          <div class="slide-content">
+            <span class="slide-category">Diseño de Interiores</span>
+            <h3 class="slide-title">Cocina Concepto Abierto</h3>
+            <p class="slide-desc">Cocina moderna con revestimientos en madera de pino seleccionado, cubiertas de cuarzo negro y gabinetes lacados minimalistas.</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('./public/assets/cocina-encimera.png');">
+          <div class="slide-content">
+            <span class="slide-category">Mobiliario de Lujo</span>
+            <h3 class="slide-title">Detalle de Cocina Rústico-Moderna</h3>
+            <p class="slide-desc">Mobiliario integrado con herrajes de cierre suave, salpicadero de mármol calacatta, campana extractora minimalista y estantería de diseño.</p>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url('./public/assets/cabana-gris.png');">
+          <div class="slide-content">
+            <span class="slide-category">Viviendas de Alta Montaña</span>
+            <h3 class="slide-title">Refugio Moderno del Bosque</h3>
+            <p class="slide-desc">Cabaña contemporánea con revestimiento exterior negro-carbón, amplia terraza elevada y cercos rústicos perimetrales.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Controls -->
+      <button class="carousel-nav-btn prev-btn" aria-label="Diapositiva anterior">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="carousel-nav-btn next-btn" aria-label="Siguiente diapositiva">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+      
+      <!-- Indicators -->
+      <div class="carousel-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="nosotros" class="about-section">
+    <div class="container grid-2">
+      <div class="about-text-content">
+        <span class="section-subtitle">¿Quiénes Somos?</span>
+        <h2 class="section-title">Vidal y Trautmann Construcciones</h2>
+        <p class="paragraph">
+          Nacimos con la visión de fusionar la solidez de la construcción tradicional en madera con el diseño arquitectónico contemporáneo y de alta eficiencia térmica. Con sede en el sur, nuestro trabajo se caracteriza por honrar los materiales nobles, la precisión en los detalles y la excelencia en el acabado.
+        </p>
+        <p class="paragraph">
+          No solo construimos estructuras; diseñamos espacios habitables. Cada viga, panel de cocina y mueble a medida refleja nuestro compromiso con el estándar más alto de durabilidad y estética moderna.
+        </p>
+        
+        <div class="features-grid">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-tree"></i></div>
+            <div class="feature-text">
+              <h4>Madera Seleccionada</h4>
+              <p>Trabajamos con maderas tratadas y nativas de manejo sostenible.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+            <div class="feature-text">
+              <h4>Diseño a Medida</h4>
+              <p>Muebles de cocina y clósets adaptados a tu espacio en 3D.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <div class="feature-text">
+              <h4>Eficiencia Térmica</h4>
+              <p>Viviendas confortables, aisladas y con tecnología termo-panel.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="feature-text">
+              <h4>Calidad Garantizada</h4>
+              <p>Supervisión detallada en cada fase de obra gruesa y terminaciones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="about-image-wrapper">
+        <div class="experience-card">
+          <span class="exp-number">15+</span>
+          <span class="exp-text">Años de<br>Trayectoria</span>
+        </div>
+        <img src="./public/assets/casa-madera.png" alt="Construcción Vidal y Trautmann" class="about-main-img">
+        <img src="./public/assets/cocina-moderna.png" alt="Terminación Vidal y Trautmann" class="about-sub-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="trabajos" class="portfolio-section">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Portafolio</span>
+        <h2 class="section-title">Nuestros Trabajos Recientes</h2>
+        <p class="section-desc">Conoce una muestra de las viviendas y remodelaciones exclusivas que hemos ejecutado con pasión y excelencia.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-container">
+            <img src="./public/assets/casa-madera.png" alt="Casa Patagónica de Madera" class="portfolio-img">
+            <div class="portfolio-badge">Casa de Campo</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Casa de Madera y Vidrio</h3>
+            <p>Estructura de pino Oregón con revestimientos texturizados y amplios ventanales en fachada.</p>
+            <div class="portfolio-specs">
+              <span><i class="fa-solid fa-maximize"></i> 120 m²</span>
+              <span><i class="fa-solid fa-calendar-days"></i> 6 Meses</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-container">
+            <img src="./public/assets/cocina-moderna.png" alt="Cocina Integrada" class="portfolio-img">
+            <div class="portfolio-badge">Cocinas</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Cocina con Concepto Madera & Cuarzo</h3>
+            <p>Remodelación de cocina con iluminación empotrada y cubiertas de alta resistencia en cuarzo pulido.</p>
+            <div class="portfolio-specs">
+              <span><i class="fa-solid fa-maximize"></i> 25 m²</span>
+              <span><i class="fa-solid fa-calendar-days"></i> 4 Semanas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-container">
+            <img src="./public/assets/cocina-encimera.png" alt="Mobiliario Cocina" class="portfolio-img">
+            <div class="portfolio-badge">Mobiliario</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Mobiliario Premium para Cocina</h3>
+            <p>Gabinete modular con rieles telescópicos, salpicadero de mármol y estantes flotantes decorativos.</p>
+            <div class="portfolio-specs">
+              <span><i class="fa-solid fa-maximize"></i> A medida</span>
+              <span><i class="fa-solid fa-calendar-days"></i> 2 Semanas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="portfolio-card">
+          <div class="portfolio-img-container">
+            <img src="./public/assets/cabana-gris.png" alt="Cabaña de Alta Montaña" class="portfolio-img">
+            <div class="portfolio-badge">Refugio</div>
+          </div>
+          <div class="portfolio-info">
+            <h3>Refugio del Bosque Elevado</h3>
+            <p>Vivienda unifamiliar de diseño escandinavo, revestimiento negro-carbón y terraza de pino impregnado.</p>
+            <div class="portfolio-specs">
+              <span><i class="fa-solid fa-maximize"></i> 85 m²</span>
+              <span><i class="fa-solid fa-calendar-days"></i> 4 Meses</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chatbot Section (Floating & Integrated) -->
+  <section id="cotizador-chat" class="chat-section">
+    <div class="container grid-2">
+      <!-- Info Column -->
+      <div class="chat-info-area">
+        <span class="section-subtitle">Asesor Familiar</span>
+        <h2 class="section-title">Conversemos tu Proyecto con Cercanía</h2>
+        <p class="paragraph">
+          Nuestro asistente acompaña a cada cliente con el mismo trato cercano de una constructora familiar: escucha primero, orienta con claridad y ayuda a tomar buenas decisiones para construir, remodelar o fabricar a medida.
+        </p>
+        <p class="paragraph">
+          Puedes preguntar por materiales, plazos, tipos de obra o iniciar una <strong>cotización estimada</strong>. La idea es que te sientas en confianza desde el primer mensaje, como parte de la familia Vidal y Trautmann.
+        </p>
+        <div class="chat-benefits">
+          <div class="benefit"><i class="fa-regular fa-circle-check"></i> Cotizaciones al instante</div>
+          <div class="benefit"><i class="fa-regular fa-circle-check"></i> Orientación cordial y experta en construcción</div>
+          <div class="benefit"><i class="fa-regular fa-circle-check"></i> Seguimiento para visita técnica</div>
+        </div>
+      </div>
+
+      <!-- Live Chat Interface -->
+      <div class="chat-box-wrapper">
+        <div class="chat-header">
+          <div class="agent-avatar">
+            <img src="./public/assets/logo.png" alt="Vidal y Trautmann Logo">
+            <span class="active-dot"></span>
+          </div>
+          <div class="agent-info">
+            <h4>Asistente Vidal y Trautmann</h4>
+            <p>Asesor familiar de proyectos</p>
+          </div>
+          <button class="chat-close-btn" id="chat-close-btn" type="button" aria-label="Cerrar chat">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        
+        <div class="chat-messages" id="chat-messages-container">
+          <!-- Welcome Message -->
+          <div class="message system-msg">
+            <div class="message-content">
+              ¡Hola! Soy el asistente de Vidal y Trautmann Construcciones. Somos una constructora familiar y me alegra acompañarte con confianza, claridad y cariño por los detalles.
+            </div>
+            <span class="message-time">Ahora</span>
+          </div>
+          
+          <div class="message system-msg">
+            <div class="message-content">
+              Cuéntame qué tienes en mente: una casa, cabaña, cocina, terraza o mueble a medida. También puedo ayudarte a cotizar o coordinar una visita técnica.
+            </div>
+            <span class="message-time">Ahora</span>
+          </div>
+        </div>
+
+        <!-- Suggestions chips -->
+        <div class="chat-suggestions" id="chat-suggestions-chips">
+          <button class="chip" data-action="quote">📊 Iniciar Cotización</button>
+          <button class="chip" data-action="servicios">🏡 ¿Qué construyen?</button>
+          <button class="chip" data-action="familia">🤝 Trato familiar</button>
+          <button class="chip" data-action="contacto">📞 Solicitar visita técnica</button>
+        </div>
+
+        <!-- Chat Input -->
+        <form class="chat-input-area" id="chat-form">
+          <input type="text" id="chat-input" placeholder="Escribe tu pregunta aquí..." autocomplete="off" class="form-control">
+          <button type="submit" class="chat-send-btn" aria-label="Enviar mensaje">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="./public/assets/logo.png" alt="Vidal y Trautmann Logo" class="footer-logo">
+        <h3>Vidal y Trautmann</h3>
+        <p class="footer-tagline">Construcciones y Mobiliario de Alta Gama</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-nav">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#trabajos">Nuestros Proyectos</a></li>
+          <li><a href="#cotizador-chat">Cotizar Obra</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services">
+        <h4>Servicios</h4>
+        <ul>
+          <li>Construcción de Viviendas Finas</li>
+          <li>Remodelación de Cocinas Premium</li>
+          <li>Mobiliario Integrado de Madera</li>
+          <li>Terrazas y Cercos Rústicos</li>
+          <li>Diseño Técnico & Planos de Corte</li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contacto & Ubicación</h4>
+        <ul>
+          <li><i class="fa-solid fa-map-pin"></i> Región de Los Lagos, Chile</li>
+          <li><i class="fa-solid fa-phone"></i> +56 9 8765 4321</li>
+          <li><i class="fa-solid fa-envelope"></i> contacto@vidalytrautmann.cl</li>
+          <li><i class="fa-solid fa-clock"></i> Lun - Vie: 8:30 - 18:30</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; 2026 Vidal y Trautmann Construcciones. Todos los derechos reservados. Desarrollado con pasión.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Chat Toggle for quick access -->
+  <button class="floating-chat-toggle" id="floating-chat-trigger" type="button" title="Hablar con asesor" aria-label="Abrir chat de Vidal y Trautmann">
+    <i class="fa-solid fa-comments"></i>
+    <span class="chat-badge">1</span>
+  </button>
+
+  <script src="./main.js" defer></script>
+</body>
+</html>
