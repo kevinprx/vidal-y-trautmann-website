@@ -931,6 +931,7 @@ img {
   display: flex;
   align-items: center;
   gap: 1rem;
+  flex-shrink: 0;
 }
 
 .agent-avatar {
@@ -1078,37 +1079,33 @@ img {
 /* Suggestions Chips */
 .chat-suggestions {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  overflow-x: auto;
-  white-space: nowrap;
   border-top: 1px solid rgba(255, 255, 255, 0.03);
-}
-
-.chat-suggestions::-webkit-scrollbar {
-  height: 4px;
-}
-
-.chat-suggestions::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.08);
+  flex-shrink: 0;
 }
 
 .chip {
   background-color: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: var(--text-muted-light);
-  padding: 0.4rem 0.9rem;
+  padding: 0.5rem 1rem;
   border-radius: 50px;
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: var(--transition-smooth);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
 }
 
 .chip:hover {
-  background-color: rgba(200, 150, 62, 0.12);
+  background-color: rgba(200, 150, 62, 0.1);
   border-color: var(--accent-gold);
-  color: var(--accent-gold);
+  color: var(--text-white);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(200, 150, 62, 0.15);
 }
 
 /* Input Area */
@@ -1119,6 +1116,12 @@ img {
   display: flex;
   gap: 0.75rem;
   align-items: center;
+  flex-shrink: 0;
+}
+
+.chat-input-area .form-control {
+  border-radius: 24px;
+  padding: 0.65rem 1.25rem;
 }
 
 .chat-send-btn {
@@ -1197,8 +1200,8 @@ img {
   position: fixed;
   bottom: 6.5rem;
   right: 2rem;
-  width: 380px;
-  height: 500px;
+  width: 400px;
+  height: 550px;
   z-index: 3000;
   display: flex;
 }

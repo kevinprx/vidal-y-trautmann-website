@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurador 3D | Vidal y Trautmann</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d110f;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-container">
+      <a href="/" class="logo-area">
+        <img src="/assets/logo.png" alt="Vidal y Trautmann Logo" class="header-logo">
+        <div class="logo-text">
+          <span class="logo-title">VIDAL Y TRAUTMANN</span>
+          <span class="logo-subtitle">CONSTRUCCIONES</span>
+        </div>
+      </a>
+      
+      <nav class="nav-menu">
+        <a href="/#inicio" class="nav-link">Inicio</a>
+        <a href="/#nosotros" class="nav-link">Nosotros</a>
+        <a href="/#trabajos" class="nav-link">Proyectos</a>
+        <a href="/configurador.html" class="nav-link active">Configurador</a>
+        <a href="/#cotizador-chat" class="nav-link highlight-link" data-open-chat>Cotizar</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="root"></div>
+  <script type="module" src="/src/configurator/main.jsx"></script>
+</body>
+</html>
